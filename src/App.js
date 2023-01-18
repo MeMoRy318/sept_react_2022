@@ -1,9 +1,13 @@
-import React from 'react';
+import './App.css'
+
+import {Simpsons} from "./components/Simpsons/Simpsons";
+import {RickAndMortyaCharacters} from "./components/RickAndMortyaCharacters/RickAndMortyaCharacters";
 
 const App = () => {
     return (
-        <div>
-
+        <div className={'App'}>
+            <Simpsons/>
+            <RickAndMortyaCharacters/>
         </div>
     );
 };
