@@ -1,9 +1,12 @@
 import React from 'react';
 
+import './App.css';
+import {Spacexs} from "./componets";
+
 const App = () => {
     return (
-        <div>
-
+        <div className={'App'}>
+            <Spacexs/>
         </div>
     );
 };
