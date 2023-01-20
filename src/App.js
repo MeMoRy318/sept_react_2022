@@ -1,9 +1,14 @@
 import React from 'react';
 
+import './App.css';
+import {Users} from "./components";
+
 const App = () => {
     return (
-        <div>
-
+        <div className={'App'}>
+            <div>
+                <Users/>
+            </div>
         </div>
     );
 };
