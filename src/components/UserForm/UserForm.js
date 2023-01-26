@@ -1,4 +1,3 @@
-import React from 'react';
 import {joiResolver} from "@hookform/resolvers/joi";
 import {useForm} from "react-hook-form";
 
