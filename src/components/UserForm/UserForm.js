@@ -17,7 +17,6 @@ const UserForm = ({setUser}) => {
 
         reset();
     };
-    console.log(errors)
 
     return (
         <form onSubmit={handleSubmit(submit)}>

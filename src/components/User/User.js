@@ -5,7 +5,8 @@ const User = ({user}) => {
 
     return (
         <div>
-            <h2>{id} - {name}</h2>
+            <h2>user id - {id}</h2>
+            <div> user name - {name}</div>
             <div>phone - {phone}</div>
             <div>username - {username}</div>
             <div>website - {website}</div>
