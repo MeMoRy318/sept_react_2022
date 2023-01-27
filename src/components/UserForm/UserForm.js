@@ -17,31 +17,32 @@ const UserForm = ({setUser}) => {
 
         reset();
     };
+    console.log(errors)
 
     return (
         <form onSubmit={handleSubmit(submit)}>
             <div>
-                <input type="text" {...register('name',{required:{value:true,message:'Поле пусте'}})} placeholder={'name'}/>
+                <input type="text" {...register('name')} placeholder={'name'}/>
                 {errors.name && <span>{errors.name.message}</span>}
             </div>
 
             <div>
-                <input type="text" {...register('username',{required:{value:true,message:'Поле пусте'}})} placeholder={'username'}/>
+                <input type="text" {...register('username')} placeholder={'username'}/>
                 {errors.username && <span>{errors.username.message}</span>}
             </div>
 
             <div>
-                <input type="text" {...register('email',{required:{value:true,message:'Поле пусте'}})} placeholder={'email'}/>
+                <input type="text" {...register('email')} placeholder={'email'}/>
                 {errors.email && <span>{errors.email.message}</span>}
             </div>
 
             <div>
-                <input type="text" {...register('phone',{required:{value:true,message:'Поле пусте'}})} placeholder={'phone'}/>
+                <input type="text" {...register('phone')} placeholder={'phone'}/>
                 {errors.phone && <span>{errors.phone.message}</span>}
             </div>
             
             <div>
-                <input type="text" {...register('website',{required:{value:true,message:'Поле пусте'}})} placeholder={'website'}/>
+                <input type="text" {...register('website')} placeholder={'website'}/>
                 {errors.website && <span>{errors.website.message}</span>}
             </div>
 
