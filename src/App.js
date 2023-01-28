@@ -16,7 +16,6 @@ const App = () => {
                 <Route path={'comments'} element={<CommentsPage/>}>
                     <Route path={':postId'} element={<PostsDetalisPage/>}/>
                 </Route>
-                <Route path={'home'} element={<HomePage/>}/>
                 <Route path={'*'} element={<NotFoundPage/>}/>
             </Route>
         </Routes>
