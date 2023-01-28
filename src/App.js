@@ -3,10 +3,11 @@ import {Route, Routes} from "react-router-dom";
 import {MyLayouts} from "./layouts";
 import {AlbumsPage, CommentsPage, HomePage, NotFoundPage, PostsDetalisPage, TodosPage} from "./pages";
 
+
 const App = () => {
 
-    return (
 
+    return (
         <Routes>
             <Route path={'/'} element={<MyLayouts/>}>
                 <Route index element={<HomePage/>}/>
@@ -19,7 +20,6 @@ const App = () => {
                 <Route path={'*'} element={<NotFoundPage/>}/>
             </Route>
         </Routes>
-
     );
 };
 
