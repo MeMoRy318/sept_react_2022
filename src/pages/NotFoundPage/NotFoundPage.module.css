@@ -1,0 +1,33 @@
+.NotFoundPage{
+    background: url('http://www.reactiongifs.us/wp-content/uploads/2015/04/nothing_to_see_here_naked_gun.gif') center / 100% 100% no-repeat;
+    height: 100vh;
+    padding-left: 40px;
+}
+.NotFoundPage__title{
+    font-size: 240px;
+    font-weight: bold;
+    color: white;
+}
+.NotFoundPage__suptitle{
+    color: white;
+    font-size: 36px;
+}
+.NotFoundPage__text{
+    color: white;
+    font-size: 28px;
+}
+.NotFoundPage__btn{
+    display: inline-block;
+    border: 1px solid #aaa;
+    border-radius: 40px;
+    padding: 15px 30px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+.NotFoundPage__btn:hover{
+    color: #e2e2e2;
+    background: rgba(255, 255, 255, 0.1);
+}
