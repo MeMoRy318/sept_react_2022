@@ -1,10 +1,16 @@
-import React from 'react';
+import {Route, Routes} from "react-router-dom";
+import {MyLayouts} from "./layouts";
 
 const App = () => {
-    return (
-        <div>
 
-        </div>
+    return (
+
+        <Routes>
+            <Route path={'/'} element={<MyLayouts/>}>
+
+            </Route>
+        </Routes>
+
     );
 };
 
