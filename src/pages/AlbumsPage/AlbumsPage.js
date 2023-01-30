@@ -17,7 +17,7 @@ const AlbumsPage = () => {
 
 
     return (
-        <div>
+        <div style={{paddingTop:'80px'}}>
             {!!albums.length && albums.map(album => <Album key={album['id']} album={album}/>)}
         </div>
     );

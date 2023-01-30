@@ -1,7 +1,10 @@
 .NotFoundPage{
-    background: url('http://www.reactiongifs.us/wp-content/uploads/2015/04/nothing_to_see_here_naked_gun.gif') center / 100% 100% no-repeat;
     height: 100vh;
-    padding-left: 40px;
+}
+.NotFoundPage__fon{
+    background: url('http://www.reactiongifs.us/wp-content/uploads/2015/04/nothing_to_see_here_naked_gun.gif') center / cover no-repeat;
+    min-height: 100%;
+    padding-left: 20px;
 }
 .NotFoundPage__title{
     font-size: 240px;

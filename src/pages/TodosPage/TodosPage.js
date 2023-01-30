@@ -18,7 +18,7 @@ const TodosPage = () => {
 
     return (
 
-        <div>
+        <div style={{paddingTop:'80px'}}>
             {!!todos.length && todos.map(todos => <Todos key={todos.id} todos={todos}/>)}
         </div>
 

@@ -18,7 +18,7 @@ const CommentsPage = () => {
 
 
     return (
-        <div>
+        <div style={{paddingTop:'80px'}}>
             <Outlet/>
             {!!comments.length && comments.map(comment => <Comment key={comment['id']} comment={comment}/>)}
         </div>
