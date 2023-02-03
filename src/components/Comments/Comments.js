@@ -24,6 +24,10 @@ class Comments extends Component{
     componentDidUpdate(prevProps, prevState, snapshot) {
     }
 
+    getSnapshotBeforeUpdate(prevProps, prevState) {
+        return true;
+    }
+
     render() {
 
         return (
