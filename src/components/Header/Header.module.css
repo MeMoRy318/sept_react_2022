@@ -12,6 +12,6 @@ nav {
 nav a{
     text-decoration: none;
 }
-nav a[class='active']{
+.header__navigate a[class='active']{
     color: red;
 }
