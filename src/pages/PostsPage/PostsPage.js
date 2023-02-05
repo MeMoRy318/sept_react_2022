@@ -12,7 +12,7 @@ class PostsPage extends Component{
 
     componentDidMount() {
 
-    postsServices.getAllPosts().then(({data:posts}) => this.state({posts}))
+    postsServices.getAllPosts().then(({data:posts}) => console.log(posts))
 
     }
 
