@@ -1,0 +1,19 @@
+.header{
+    min-width: 100%;
+    height: 70px;
+    background: dimgray;
+}
+.header__nav a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.header__nav a[class = 'active']{
+    color: red;
+}
+.header__nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
