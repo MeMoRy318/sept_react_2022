@@ -3,7 +3,7 @@ import {Navigate, useLocation} from "react-router-dom";
 import {useContextReducers} from "../../myCastomHook";
 
 
-const RequariPage = ({children}) => {
+const RequirePage = ({children}) => {
 
     const [state] = useContextReducers((item)=>item.loginReducers);
     const {pathname} = useLocation();
@@ -17,4 +17,4 @@ const RequariPage = ({children}) => {
     }
 };
 
-export {RequariPage};
+export {RequirePage};
