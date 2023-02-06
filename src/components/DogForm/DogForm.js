@@ -2,15 +2,14 @@ import {useForm} from "react-hook-form";
 
 import {actionDog} from "../../reducers";
 
+
 const DogForm = ({action}) => {
 
     const {register,reset,handleSubmit} = useForm();
 
     const submit = async (data) => {
-
-        await action(actionDog.ADD(data))
-
-        reset()
+        await action(actionDog.ADD(data));
+        reset();
     };
 
     return (

@@ -1,14 +1,17 @@
-
 const actionTypeDog ={
     ADD:'ADD',
     DELETE_BY_ID:'DELETE_BY_ID'
 };
+
+
 const actionDog = {
     ADD:(item)=>({type:actionTypeDog.ADD,payload:item}),
     DELETE_BY_ID:(id)=>({type:actionTypeDog.DELETE_BY_ID,payload:id})
 };
 
+
 const dogInitValue = () => [];
+
 
 const dogReducer = (state,action)=>{
 
@@ -24,7 +27,6 @@ const dogReducer = (state,action)=>{
 
         default:
             return [...state];
-
     }
 }
 

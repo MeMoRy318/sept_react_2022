@@ -2,16 +2,14 @@ import {useForm} from "react-hook-form";
 
 import {actionCat} from "../../reducers";
 
+
 const CatForm = ({action}) => {
 
-    const {register,reset,handleSubmit} = useForm()
+    const {register,reset,handleSubmit} = useForm();
 
     const sumbmit = async (data) => {
-
         await action(actionCat.ADD(data));
-
-        reset()
-
+        reset();
     };
 
     return (

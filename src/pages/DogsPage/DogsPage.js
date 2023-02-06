@@ -1,10 +1,10 @@
 import {Dog, DogForm} from "../../components";
 import {useContextReducers} from "../../myCastomHook";
 
+
 const DogsPage = () => {
 
-    const [state,action] = useContextReducers((item)=>item.dogReducers)
-
+    const [state,action] = useContextReducers((item)=>item.dogReducers);
 
     return (
         <div>

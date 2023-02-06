@@ -1,5 +1,6 @@
 import {actionDog} from "../../reducers";
 
+
 const Dog = ({dog,action}) => {
 
     const {id,name,age} = dog;

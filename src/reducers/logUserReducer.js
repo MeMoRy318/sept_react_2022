@@ -1,30 +1,32 @@
 const actionTypeUser = {
-
     LOGIN:'LOGIN',
     OUT:'OUT'
 };
 
+
 const actionUser = {
+    LOGIN:(item)=>({type:actionTypeUser.LOGIN,payload:{item}}),
+    OUT:() =>({type: actionTypeUser.OUT})
+};
 
-    LOGIN:()=>({type:actionTypeUser.LOGIN}),
-    OUT:() =>({type: actionUser.LOGIN})
-}
 
-const loginInitValue = () => false;
+const loginInitValue = () => [];
+
 
 const loginReducer = (state,action)=>{
 
-    switch (state.type) {
+    switch (action.type) {
 
         case actionTypeUser.LOGIN:
-            return true
+            return [...state,action.payload]
 
         case actionTypeUser.OUT:
-            return false;
+            return [];
 
         default:
             return state;
     }
 
 }
+
 export {actionUser,loginReducer,loginInitValue};

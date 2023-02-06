@@ -1,8 +1,9 @@
 import {actionCat} from "../../reducers";
 
+
 const Cat = ({cat,action}) => {
 
-    const {id,name,age} = cat
+    const {id,name,age} = cat;
 
     return (
         <div>
