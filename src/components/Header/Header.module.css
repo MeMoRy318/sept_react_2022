@@ -1,0 +1,17 @@
+nav a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #282c34;
+    height: 70px;
+}
+
+nav a[class='active']{
+    color:red;
+}
