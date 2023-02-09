@@ -5,5 +5,4 @@ const urls ={
     cars:'cars'
 };
 
-
 export {baseURL,urls};

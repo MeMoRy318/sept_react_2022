@@ -9,5 +9,4 @@ const carServices = {
     deleteCar:(id)=>axiosServices.delete(`${urls.cars}/${id}`)
 };
 
-
 export {carServices};

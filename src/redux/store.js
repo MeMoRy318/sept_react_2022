@@ -12,5 +12,4 @@ const setupStore = () => configureStore({
     reducer:rootReducers
 });
 
-
 export {setupStore};
