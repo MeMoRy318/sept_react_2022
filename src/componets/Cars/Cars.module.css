@@ -1,0 +1,16 @@
+.pagination{
+    min-width: 100%;
+}
+span{
+    cursor: pointer;
+    display: inline-block;
+    background: dimgray;
+    color: #172121;
+    margin: 0 10px;
+    border-radius: 50%;
+    width: 22px;
+    text-align: center;
+}
+span [class='active']{
+    color: red;
+}
