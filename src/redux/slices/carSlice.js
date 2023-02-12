@@ -12,6 +12,7 @@ const initialState = {
     currentPage:1
 };
 
+
 const getCars = createAsyncThunk(
     'carSlice/getCars',
     async ({page},thunkAPI)=>{

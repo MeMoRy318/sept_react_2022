@@ -1,7 +1,7 @@
 .pagination{
     min-width: 100%;
 }
-span{
+.pagination_box span{
     cursor: pointer;
     display: inline-block;
     background: dimgray;
@@ -11,6 +11,6 @@ span{
     width: 22px;
     text-align: center;
 }
-span [class='active']{
+.pagination_box .active{
     color: red;
 }

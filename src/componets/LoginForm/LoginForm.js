@@ -8,8 +8,9 @@ import {loginValidator} from "../../validators";
 
 const LoginForm = () => {
 
-
     const {register,handleSubmit,reset,formState:{isValid,errors}} = useForm({mode:"onTouched",resolver:joiResolver(loginValidator)});
+
+
     const navigate = useNavigate();
 
 

@@ -3,7 +3,6 @@ import {CarForm, Cars} from "../../componets";
 
 const CarPage = () => {
 
-
     return (
         <div>
             <CarForm/>

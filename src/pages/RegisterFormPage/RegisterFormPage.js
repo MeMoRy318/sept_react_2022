@@ -1,6 +1,8 @@
 import {RegisterForm} from "../../componets";
 
+
 const RegisterFormPage = () => {
+
     return (
         <div>
             <RegisterForm/>

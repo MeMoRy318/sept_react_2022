@@ -1,20 +1,20 @@
+import {useEffect} from "react";
 import {useForm} from "react-hook-form";
 import {joiResolver} from "@hookform/resolvers/joi";
+import {useDispatch, useSelector} from "react-redux";
 
 import {carValidator} from "../../validators/carValidator";
-import {useDispatch, useSelector} from "react-redux";
 import {carAction} from "../../redux/slices";
-import {useEffect} from "react";
 
 
 const CarForm = () => {
 
-
     const {reset,register,setValue,handleSubmit,formState:{errors,isValid}} = useForm({mode:"onChange",resolver:joiResolver(carValidator)});
+
 
     const dispatch = useDispatch();
     const {setValueCars} = useSelector(state => state.carReducer);
-    console.log()
+
     useEffect(()=>{
         if (setValueCars){
             setValue('price',setValueCars.price,{shouldValidate:true})

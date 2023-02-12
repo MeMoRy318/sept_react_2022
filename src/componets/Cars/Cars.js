@@ -1,4 +1,4 @@
-import {useEffect, useState} from "react";
+import {useEffect} from "react";
 import {useSearchParams} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
 
@@ -10,12 +10,10 @@ import {useCreatePages} from "../../myCastomHook";
 
 const Cars = () => {
 
-
     const dispatch = useDispatch();
     const {cars,pagesCount,currentPage} = useSelector(state => state.carReducer);
     const [query,setQuery] = useSearchParams({page:'1'});
     const pages = useCreatePages(pagesCount,currentPage);
-
 
     useEffect(()=>{
         dispatch(carAction.getCars({page:query.get('page')}))
@@ -27,7 +25,7 @@ const Cars = () => {
             <div className={css.pagination_box}>
                 <button disabled={+query.get('page') === 1} onClick={()=>setQuery(query =>({page:+query.get('page')-1}) )}>prev</button>
                 {pages.map(value =>
-                    <span key={value} className={ value===currentPage ? 'active' : 'default'} onClick={()=>setQuery(prev => ({page:value+''}))}>
+                    <span key={value} className={ value===currentPage ? css.active : 'default'} onClick={()=>setQuery(prev => ({page:value+''}))}>
                     {value}
                 </span>)}
                 <button disabled={+query.get('page') === pagesCount} onClick={()=>setQuery(query =>({page:+query.get('page')+1}) )}>next</button>

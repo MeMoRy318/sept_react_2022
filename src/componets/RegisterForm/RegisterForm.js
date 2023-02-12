@@ -9,10 +9,9 @@ import {registerValidator} from "../../validators/registerValidator";
 
 const RegisterForm = () => {
 
-
     const {reset,register,handleSubmit,formState:{isValid,errors}} = useForm({mode:"onChange",resolver:joiResolver(registerValidator)});
-    const navigate = useNavigate();
     const [error,setError] = useState(false)
+    const navigate = useNavigate();
 
 
     const submit = async (data) => {
