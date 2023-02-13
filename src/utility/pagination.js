@@ -1,4 +1,3 @@
-// const page = []
 const createPages = (pagesCount, currentPage) => {
     const pages = [];
     if(pagesCount > 10) {
@@ -22,8 +21,6 @@ const createPages = (pagesCount, currentPage) => {
     return pages;
 }
 
-
 export {createPages}
 //currentPage - поточна Page
 //pagesCount - кількість Page
-//createPages( page,1150, 15)

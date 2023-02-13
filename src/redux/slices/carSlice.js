@@ -1,4 +1,4 @@
-import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
+import {createAsyncThunk, createSlice,current} from "@reduxjs/toolkit";
 
 import {carServices} from "../../services";
 
@@ -18,6 +18,7 @@ const getCars = createAsyncThunk(
     async ({page},thunkAPI)=>{
         try {
             const {data} = await carServices.getAllCars(page);
+            console.log(data)
             return data;
         }catch (e) {
             return thunkAPI.rejectWithValue(e.response.data)
@@ -76,10 +77,10 @@ const carSlice = createSlice({
     extraReducers:builder =>
         builder
             .addCase(getCars.fulfilled,(state, action)=>{
-                const {items,total_pages,next:{page}} = action.payload;
+                const {items,total_pages,next} = action.payload;
                 state.cars = items;
                 state.pagesCount = total_pages;
-                state.currentPage = +page -1;
+                state.currentPage = !!next?.page ? next.page -1 :total_pages ;
             })
             .addCase(carCreate.fulfilled,(state, action)=>{
                 state.cars.push(action.payload);
