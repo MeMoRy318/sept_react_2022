@@ -1,7 +1,9 @@
 import {createPages} from "../utility";
 
+import {useCallback} from "react";
 
-const useCreatePages =(pagesCount,currentPage)=>createPages(pagesCount,currentPage);
+
+const useCreatePages = (pagesCount,currentPage)=>useCallback(createPages(pagesCount,currentPage),[pagesCount,currentPage]);
 
 
 export {useCreatePages};
